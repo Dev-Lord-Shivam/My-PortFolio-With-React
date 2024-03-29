@@ -1,0 +1,81 @@
+#Intro{
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 75rem;
+    position: relative;
+}
+.Profile_Pic{
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+.IntroContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.IntroName{
+    color: yellow;
+}
+.IntroPara{
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: normal;
+}
+.BtnDiv{
+    display: flex;
+}
+.btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border:none;
+    font-weight: bold;
+    transform: translateY(0);
+    transition: all 0.5s linear;
+}
+.btn i{
+    margin-right: 5px;
+}
+.btn:hover {
+    box-shadow: inset 8rem 0 0 0 var(--color), inset -8rem 0 0 0 var(--color);
+    color: var(--hover-b);
+    transform: translateY(-0.5rem);
+}
+
+@media screen and (max-width:840px) {
+       .Profile_Pic{
+          right: -10vw;
+       }
+       .IntroContent{
+        font-size: 10vw;
+       } 
+       .hello{
+        font-size: 4.5rem;
+       }
+       #Intro{
+        background: linear-gradient(#00000073, #00000059);
+    }
+}
+@media screen and (max-width:480px) {
+    .Profile_Pic{
+       right: -82vw;
+    }
+    #Intro{
+        background: linear-gradient(#00000073, #00000059);
+    }
+}

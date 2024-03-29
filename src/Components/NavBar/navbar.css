@@ -1,0 +1,95 @@
+.navbar{
+    background: rgb(11, 11, 11);
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 75rem;
+    z-index: 3;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.LogoContainer{
+    display: flex;
+    align-items: center;
+}
+.LogoContainer h1 {
+    color: yellow;
+}
+.Font_icon{
+    font-size: 30px;
+    margin-right: 10px;
+    color: yellow;
+}
+.MenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+}
+.MenuListItem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+.btn{
+    transform: translateY(0);
+        transition: all 0.5s linear;
+}
+.ContactMe{
+    padding: 10px;
+    border-radius: 20px;
+    border:none;
+}
+
+.ContactMe:hover {
+    box-shadow: inset 8rem 0 0 0 var(--color), inset -8rem 0 0 0 var(--color);
+    color: var(--hover-b);
+    transform: translateY(-0.5rem);
+}
+.active{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    padding-bottom: 0.5rem;
+}
+
+.navMenu{
+    position:absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+
+.ListItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
+.mobmenu{
+    display: none;
+    height: 1.8rem;
+    font-size: 30px;
+    color: yellow;
+}
+
+@media screen and (max-width:720px) {
+    .mobmenu{
+        display: flex;
+    }
+    .MenuList{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+}

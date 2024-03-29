@@ -1,0 +1,107 @@
+#Skills{
+    margin:0 auto;
+    max-width: 65rem;
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.SkillTitle{
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+.SkillContainer{
+    width: 100%;
+    display: flex;
+}
+.SkillBox {
+    margin: 10px;
+    width: 25%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    box-shadow: rgba(28, 28, 29, 0.422) 0px 13px 27px -5px, rgba(0, 0, 0, 0.313) 0px 8px 16px -8px;
+} 
+.SkillBox img{
+    width:5rem;
+    height: 5rem;
+}
+.dotnet-box:hover{
+    background-color: rgba(88, 88, 245, 0.342);
+    /* box-shadow: rgba(88, 88, 245, 0.342) 0px 13px 27px -5px, rgba(88, 88, 245, 0.342) 0px 8px 16px -8px; */
+}
+.js-box:hover{
+    background-color: rgba(227, 245, 88, 0.342);
+    /* box-shadow: rgba(227, 245, 88, 0.342) 0px 13px 27px -5px, rgba(227, 245, 88, 0.342) 0px 8px 16px -8px; */
+}
+.Html-box:hover{
+    background-color: rgba(244, 137, 75, 0.342);
+    /* box-shadow: rgba(244, 137, 75, 0.342) 0px 13px 27px -5px, rgba(244, 137, 75, 0.342) 0px 8px 16px -8px; */
+}
+.JQuery-box:hover{
+    background-color: rgba(75, 171, 244, 0.342);
+    /* box-shadow: rgba(75, 171, 244, 0.342) 0px 13px 27px -5px, rgba(75, 171, 244, 0.342) 0px 8px 16px -8px; */
+}
+.sql-box:hover{
+    background-color: rgba(250, 178, 70, 0.342);
+    /* box-shadow: rgba(250, 178, 70, 0.342) 0px 13px 27px -5px, rgba(250, 178, 70, 0.342) 0px 8px 16px -8px; */
+}
+.csarp-box:hover{
+    background-color: rgba(250, 70, 205, 0.342);
+    /* box-shadow: rgba(250, 70, 205, 0.342) 0px 13px 27px -5px, rgba(250, 70, 205, 0.342) 0px 8px 16px -8px; */
+}
+.react-box:hover{
+    background-color: rgba(75, 171, 244, 0.342);
+    /* box-shadow: rgba(75, 171, 244, 0.342) 0px 13px 27px -5px, rgba(75, 171, 244, 0.342) 0px 8px 16px -8px; */
+}
+.webapi-box:hover{
+    background-color: rgba(28, 93, 197, 0.342);
+    /* box-shadow: rgba(28, 93, 197, 0.342) 0px 13px 27px -5px, rgba(28, 93, 197, 0.342) 0px 8px 16px -8px; */
+}
+
+@media screen and (max-width:770px) {
+
+    .SkillBox{
+        /* width: 60%; */
+        height: 10rem;
+
+    }
+    .SkillPara{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .SkillBox img{
+        width:4rem;
+        height: 4rem;
+    }
+    .SkillBox span{
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .SkillBox{
+        /* width: 60%; */
+        height: 5rem;
+
+    }
+    .SkillPara{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .SkillBox img{
+        width:2rem;
+        height: 2rem;
+    }
+    .SkillBox span{
+        font-size: 8px;
+    }
+}
